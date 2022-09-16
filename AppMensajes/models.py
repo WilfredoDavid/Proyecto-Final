@@ -6,8 +6,13 @@ class MensajesRecibidos(models.Model):
     nombre=models.CharField(max_length=50)
     mensaje=models.CharField(max_length=250)
 
+    def __str__(self):
+        return self.nombre
+
 class MensajesEnviados(models.Model):
     nombre=models.CharField(max_length=50)
     mensaje=models.CharField(max_length=250)
     
+    def __str__(self):
+        return self.nombre
 
