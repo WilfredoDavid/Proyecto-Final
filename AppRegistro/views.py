@@ -7,3 +7,5 @@ from AppRegistro.models import *
 from AppRegistro.forms import *
 
 # Create your views here.
+def inicio(request):
+    return render(request, "AppRegistro/inicio.html")
