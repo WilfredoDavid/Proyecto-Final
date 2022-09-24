@@ -10,15 +10,18 @@
 
 {% block contenido_que_cambia %}
 <h1>Chat</h1>
-<form action="{% url 'mensajesFormulario' %}" method="POST"> {% csrf_token %} 
+<form action="{% url 'inbox' %}" method="POST"> {% csrf_token %} 
 <table>
-
+  
     {{ formulario.as_table }}
+
 </table>
 
 <input type="submit", value="Enviar">
 
 </form>
+
+<h2>{{ comentario }}</h2>
 
 
 

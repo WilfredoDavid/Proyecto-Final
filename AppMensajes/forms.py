@@ -2,4 +2,4 @@ from django import forms
 
 class MensajesFormulario(forms.Form):
     usuario=forms.CharField(max_length=50)
-    mensaje=forms.TextInput()
+    mensajes=forms.CharField(max_length=1000)

@@ -1,0 +1,25 @@
+{% extends "AppMensajes/padre.html" %}
+
+{% load static %}
+
+{% block titulo_de_pagina %}
+<h1 class='mb-5'>Buscamos mensajes por usuarios</h1>
+{% endblock %}
+
+
+
+{% block contenido_que_cambia %}
+<h1>Chat</h1>
+<form action="{% url 'buscar' %}" method="GET" enctype="multipart/form-data"> {% csrf_token %} 
+
+<p>Usuario: </p><input type="text", name="usuario", id="usuario">
+
+<input type="submit", value="Buscar">
+
+</form>
+
+<h2>{{ comentario }}</h2>
+
+
+
+{% endblock %}

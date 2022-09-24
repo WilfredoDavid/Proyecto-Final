@@ -7,7 +7,9 @@ urlpatterns = [
     path('', inicio, name="inicio" ),
     path('mensajesRecibidos/', mensajesRecibidos, name='mensajesRecibidos'),
     path('mensajesEnviados/', mensajesEnviados, name='mensajesEnviados'),
-    path('mensajesFormulario/', mensajesFormulario, name='mensajesFormulario')
+    path('inbox/', inbox, name='inbox'),
+    path('busquedaUsuario/', busquedaUsuario, name='busquedaUsuario'),
+    path('buscar/', buscar ,name='buscar' ),
 
 
 ]
